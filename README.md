@@ -1,5 +1,4 @@
 # Linkedin-Akatsuki
-Akatsuki
 ![Linkedin](https://user-images.githubusercontent.com/81439723/114333574-01b71800-9b1f-11eb-93ce-f93fbc8d2ba1.PNG)
 
 
