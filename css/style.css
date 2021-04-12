@@ -1,0 +1,722 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "kanit bold", sans-serif;
+  font: 18px;
+  width: 100vw;
+  height: 100vh;
+  background: transparent url("../img/Group 78.png") 0% 0% padding-box;
+  background-repeat: round;
+  opacity: 1;
+  overflow: hidden;
+  display: flex;
+}
+
+header {
+  height: 100%;
+  width: 20%;
+}
+
+main {
+  overflow: hidden;
+  display: flex;
+  height: 100%;
+  width: 60%;
+}
+
+section {
+  height: 100%;
+  width: 20%;
+}
+
+/* ESTILIZAÇÃO HEADER */
+.icon img {
+  margin-top: 41px;
+  margin-left: 81px;
+}
+
+/* Estilização do Card e alinhamento */
+header .card {
+  margin-top: 7.5rem;
+  margin-left: 5.063rem;
+  width: 17.5rem;
+  height: 30rem;
+  background: #383669 blur(43px);
+  backdrop-filter: blur(43px);
+  -webkit-backdrop-filter: blur(43px);
+  opacity: 1;
+  border-radius: 2.125rem;
+  overflow: hidden;
+  position: absolute;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+
+/* Imagem itachi sobrepondo card */
+header .itachi {
+  margin-top: 60px;
+  margin-left: 125px;
+  position: absolute;
+  z-index: 2;
+}
+
+/* Borda da lateral superior do card */
+.border {
+  width: 60px;
+  height: 60px;
+  background: #fd264e;
+  margin-left: 306px;
+  margin-top: 115px;
+  border-radius: 0px 34px 0px 0px;
+}
+
+/* Borda da lateral inferior do card */
+.border2 {
+  width: 60px;
+  height: 60px;
+  background: #fd264e;
+  margin-left: 76px;
+  margin-top: 371px;
+  border-radius: 0px 0px 0px 34px;
+}
+
+/* Titulo principal Itachi Uchiha */
+header .card h1 {
+  font: 27px kanit, bold;
+  color: #ffffff;
+  letter-spacing: 0px;
+  margin-top: 70px;
+  align-items: center;
+}
+
+/* Alterar cor do span "Akatsuki" */
+header .card span {
+  color: #ffffff;
+  font: 12px kanit;
+}
+
+/* Alinhamento do sub-titulo "Nukenin at" */
+header .card p {
+  text-align: flex;
+  color: #72718d;
+  font: 13px kanit;
+  padding-bottom: 45px;
+  align-items: center;
+}
+
+/* Alinhamento dos icones do card */
+header .card .info img {
+  float: left;
+  padding-bottom: 20px;
+}
+
+/* Texto ao lado do icone do card */
+header .card .info h2 {
+  display: flex;
+  color: #72718d;
+  font-size: 16px;
+  align-items: center;
+  padding-bottom: 40px;
+  padding-left: 10px;
+}
+
+/* Botão com os números de notifações */
+header .card .info button {
+  float: right;
+  margin-left: 40px;
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  border: none;
+}
+
+/* Card do rodapé */
+.card-footer {
+  margin-top: 56px;
+  margin-left: 81px;
+  width: 280px;
+  height: 180px;
+  float: left;
+  align-items: center;
+  background: linear-gradient(to right, #141329, #27263b);
+  opacity: 1;
+  border-radius: 34px 34px 0px 0px;
+  position: relative;
+}
+
+/* Titulo "Groups" do card do rodapé */
+.card-footer h1 {
+  color: #fafafa;
+  text-align: left;
+  font-size: 28px;
+  font-family: kanit;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+/* Botão do card do rodapé com imagem e texto */
+.card-footer .button {
+  cursor: pointer;
+  width: 200px;
+  height: 65px;
+  margin-top: 40px;
+  margin-left: 40px;
+  background: #313046 url("../img/nuvem34@2.png") left center no-repeat
+    padding-box; /* Imagem da nuvem dentro do botão */
+  border: none;
+  border-radius: 13px;
+  color: #fafafa;
+  font-family: "kanit";
+  padding-left: 40px;
+}
+
+/* Alteração cor sub-titulo */
+.card-footer p {
+  color: #72718d;
+}
+
+/* Retirando o focus do botão */
+button:focus {
+  outline: 0;
+}
+
+/* Ao passar com o mouse o botão aumentar */
+.card-footer .button:hover {
+  transition: all 1s;
+  transform: scale(1.1);
+}
+
+/* ESTILIZAÇÃO MAIN */
+main .search {
+  cursor: pointer;
+  margin-left: 90px;
+  display: flex;
+  width: 480px;
+  height: 45px;
+  background: #fafafa;
+  margin-top: 41px;
+  border-radius: 8px;
+}
+
+/* Barra de pesquisa */
+main .search input {
+  outline: none;
+  border: none;
+  width: 480px;
+  border-radius: 8px;
+}
+
+/* Imagem da barra de pesquisa */
+main .search img {
+  float: left;
+  width: 20px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+main .bell {
+  display: flex;
+  height: 200px;
+}
+
+main .message {
+  display: flex;
+  height: 200px;
+}
+
+/* icone de notificação */
+main .bell button {
+  cursor: pointer;
+  margin-top: 41px;
+  background: #383669 blur(43px);
+  backdrop-filter: blur(43px);
+  -webkit-backdrop-filter: blur(43px);
+  display: flex;
+  width: 57px;
+  height: 45px;
+  align-items: center;
+  margin-left: 390px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  background: url("../img/Icon\ feather-bell-white.svg") no-repeat center;
+}
+
+/* icone de notificação */
+main .message button {
+  cursor: pointer;
+  margin-top: 41px;
+  background: #383669 blur(43px);
+  backdrop-filter: blur(43px);
+  -webkit-backdrop-filter: blur(43px);
+  display: flex;
+  width: 57px;
+  height: 45px;
+  align-items: center;
+  margin-left: 33px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  background: url("../img/Icon\ feather-message-square-white.svg") no-repeat
+    center;
+}
+
+/* pop-up de notificação-message */
+main .notification-message {
+  width: 18px;
+  height: 18px;
+  background: #ffffff;
+  position: absolute;
+  margin-top: 35px;
+  margin-left: 1090px;
+  text-align: center;
+  border-radius: 6px;
+  color: #fd264e;
+  font-size: 13px;
+  font-family: "kanit";
+}
+
+/* pop-up de notificação-bell */
+main .notification-bell {
+  width: 18px;
+  height: 18px;
+  background: #ffffff;
+  position: absolute;
+  margin-top: 35px;
+  margin-left: 1000px;
+  text-align: center;
+  border-radius: 6px;
+  color: #fd264e;
+  font-size: 13px;
+  font-family: "kanit";
+}
+
+main .card-all {
+  background-image: radial-gradient(
+      closest-side at 97% 4%,
+      #313046 0%,
+      #141329 100%
+    )
+    blur();
+  backdrop-filter: blur(300px);
+  -webkit-backdrop-filter: blur(43px);
+  width: 500px;
+  height: 500px;
+  margin-top: 180px;
+  margin-left: 70px;
+  border-radius: 34px;
+  -webkit-box-shadow: 9px 7px 5px rgba(2, 2, 2, 0.55);
+  -moz-box-shadow: 9px 7px 5px rgba(2, 2, 2, 0.55);
+  box-shadow: 9px 7px 5px rgba(2, 2, 2, 0.55);
+  display: flex;
+  position: absolute;
+}
+
+main .card-all h1 {
+  font-family: "kanit";
+  font-size: 28px;
+  margin-top: 20px;
+  margin-left: 15px;
+  display: flex;
+}
+
+main .card-suzano {
+  margin-left: 40px;
+  margin-top: 80px;
+  background: url("../img/nuvem34@2.png");
+  opacity: 0.8;
+  width: 420px;
+  height: 190px;
+  position: absolute;
+  display: flex;
+  z-index: -1;
+  border-radius: 15px;
+}
+
+main .card-suzano::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(253, 38, 78, 0.9);
+  border-radius: 15px;
+}
+
+main .card-suzano h1 {
+  z-index: 3;
+  display: flex;
+}
+
+main .card-suzano h2 {
+  font-size: 19px;
+  z-index: 1;
+  margin-top: 60px;
+  margin-left: 220px;
+  display: flex;
+  color: #ffffff;
+  position: absolute;
+}
+
+main .card-suzano p {
+  font-family: kanit, regular;
+  font-size: 10px;
+  z-index: 1;
+  margin-top: 100px;
+  margin-left: 220px;
+  display: flex;
+  color: #ffffff;
+  position: absolute;
+  letter-spacing: 1px;
+}
+
+main .suzano img {
+  margin-left: 40px;
+  margin-top: 50px;
+  height: 220px;
+}
+
+main .card-all button {
+  cursor: pointer;
+  width: 84px;
+  height: 34px;
+  margin-left: 375px;
+  margin-top: 20px;
+  position: absolute;
+  border-radius: 10px;
+  border: 1px solid #ffffff24;
+  background: transparent;
+}
+
+main .suzano button {
+  cursor: pointer;
+  background: #ffffff;
+  width: 58px;
+  height: 27px;
+  float: left;
+}
+
+main .card2 {
+  width: 200px;
+  height: 190px;
+  margin-top: 300px;
+  margin-left: 40px;
+  background: url("../img/Group\ 79.png") no-repeat;
+  position: absolute;
+}
+
+main .card3 {
+  width: 173px;
+  height: 169px;
+  margin-top: 300px;
+  margin-left: 290px;
+  position: absolute;
+  background: url("../img/Group\ 80.png") no-repeat;
+}
+
+main .footer-itachi {
+  background: linear-gradient(to right, #141329, #27263b);
+  backdrop-filter: blur(43px);
+  -webkit-backdrop-filter: blur(43px);
+  width: 1000px;
+  height: 200px;
+  margin-top: 770px;
+  margin-left: 70px;
+  position: absolute;
+  z-index: 1;
+}
+
+img#itachi-footer {
+  position: absolute;
+  margin-top: 665px;
+  margin-left: 790px;
+  z-index: 2;
+}
+
+main .card-connect {
+  background: radial-gradient(closest-side at 97% 4%, #313046 0%, #141329 100%)
+    blur();
+  backdrop-filter: blur(300px);
+  -webkit-backdrop-filter: blur(43px);
+  margin-top: 267px;
+  margin-left: 600px;
+  width: 400px;
+  height: 500px;
+  position: absolute;
+  border-radius: 34px;
+  -webkit-box-shadow: 9px 7px 5px rgba(2, 2, 2, 0.55);
+  -moz-box-shadow: 9px 7px 5px rgba(2, 2, 2, 0.55);
+  box-shadow: 9px 7px 5px rgba(2, 2, 2, 0.55);
+}
+
+main .card-1 {
+  margin-left: 40px;
+  margin-top: 90px;
+  width: 140px;
+  height: 95px;
+  display: inline-flex;
+  border-radius: 10px;
+  background: #383669 blur();
+  backdrop-filter: blur(300px);
+  -webkit-backdrop-filter: blur(43px);
+}
+
+main .card-2 {
+  margin-left: 40px;
+  margin-top: 40px;
+  width: 140px;
+  height: 95px;
+  display: inline-flex;
+  border-radius: 10px;
+  background: #383669 blur(300px);
+  backdrop-filter: blur(300px);
+  -webkit-backdrop-filter: blur(43px);
+}
+
+img#pain {
+  position: absolute;
+  margin-left: 70px;
+  margin-top: 60px;
+}
+
+img#kisame {
+  position: absolute;
+  margin-left: 255px;
+  margin-top: 60px;
+}
+
+img#deidara {
+  position: absolute;
+  margin-left: 70px;
+  margin-top: 200px;
+}
+
+img#sasori {
+  position: absolute;
+  margin-left: 255px;
+  margin-top: 200px;
+}
+
+img#tobi {
+  position: absolute;
+  margin-left: 70px;
+  margin-top: 335px;
+}
+
+img#kakuzu {
+  position: absolute;
+  margin-left: 255px;
+  margin-top: 335px;
+}
+
+/* Alterar cor do span "Akatsuki" */
+main .card-1 span {
+  color: #ffffff;
+  font: 12px kanit;
+  align-items: center;
+}
+
+/* Alinhamento do sub-titulo "Nukenin at" */
+main .card-1 p {
+  text-align: flex;
+  color: #72718d;
+  font: 13px kanit;
+  align-items: center;
+  float: left;
+  align-items: center;
+}
+
+/* Alterar cor do span "Akatsuki" */
+main .card-2 span {
+  color: #ffffff;
+  font: 12px kanit;
+  align-items: center;
+}
+
+/* Alinhamento do sub-titulo "Nukenin at" */
+main .card-2 p {
+  text-align: flex;
+  color: #72718d;
+  font: 13px kanit;
+  align-items: center;
+  float: left;
+  align-items: center;
+}
+
+main .info {
+  font-family: "kanit";
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+button#buttonc {
+  cursor: pointer;
+  width: 84px;
+  height: 34px;
+  margin-top: 10px;
+  margin-left: 280px;
+  border-radius: 10px;
+  border: 1px solid #ffffff24;
+  background: transparent;
+}
+
+section .card-header {
+  margin-top: 10px;
+}
+
+button#btn-itachi.button {
+  cursor: pointer;
+  margin-top: 30px;
+  width: 100px;
+  height: 45px;
+  position: absolute;
+  background: transparent;
+  border: none;
+  margin-left: 100px;
+}
+
+section .card-job {
+  margin-left: 20px;
+  width: 300px;
+  height: 420px;
+  border-radius: 13px;
+  background: radial-gradient(closest-side at 97% 4%, #313046 0%, #141329 100%)
+    blur();
+  backdrop-filter: blur(300px);
+  -webkit-backdrop-filter: blur(43px);
+  -webkit-box-shadow: 6px 7px 5px rgba(2, 2, 2, 0.55);
+  -moz-box-shadow: 6px 7px 5px rgba(2, 2, 2, 0.55);
+  box-shadow: 6px 7px 5px rgba(2, 2, 2, 0.55);
+}
+
+section .card-job button {
+  cursor: pointer;
+  width: 250px;
+  display: inline-block;
+  height: 90px;
+  border-radius: 13px;
+  border: none;
+  margin-top: 5px;
+  color: #fafafa;
+  margin-bottom: 10px;
+  margin-left: 25px;
+  text-align: justify-all;
+}
+
+section .card-job p {
+  margin-top: 15px;
+  color: #72718d;
+}
+
+section .card-job button:nth-child(3) {
+  height: 130px;
+}
+
+button#mizukage.button {
+  margin-top: 70px;
+  background: #222136 url("../img/7883bd152069bfe69f123083ada754db-3@2x.png")
+    left center no-repeat;
+}
+
+button#sand.button {
+  background: #222136 url("../img/7883bd152069bfe69f123083ada754db-1@2x.png")
+    left center no-repeat;
+}
+
+button#biju.button {
+  background: #222136 url("../img/7883bd152069bfe69f123083ada754db@2x.png") left
+    center no-repeat;
+}
+
+section .card-end {
+  margin-top: 30px;
+  margin-left: 25px;
+  width: 300px;
+  height: 390px;
+  background-image: radial-gradient(
+      closest-side at 97% 4%,
+      #313046 0%,
+      #141329 100%
+    )
+    blur();
+  backdrop-filter: blur(300px);
+  -webkit-backdrop-filter: blur(43px);
+  -webkit-box-shadow: 6px 7px 5px rgba(2, 2, 2, 0.55);
+  -moz-box-shadow: 6px 7px 5px rgba(2, 2, 2, 0.55);
+  box-shadow: 6px 7px 5px rgba(2, 2, 2, 0.55);
+  border-radius: 13px;
+}
+
+section .card-end .search-end {
+  position: absolute;
+  display: flex;
+  margin-top: 20px;
+  height: 36px;
+  background: #fafafa;
+  border-radius: 8px;
+}
+
+section .card-end input {
+  width: 150px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+}
+section .card-end img {
+  width: 20px;
+  margin-left: 10px;
+}
+
+button#button-search {
+  position: absolute;
+  margin-left: 230px;
+  width: 33px;
+  height: 36px;
+  background: #fd264e url("../img/edit.svg") center no-repeat;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+section .card-end button {
+  width: 300px;
+  height: 90px;
+}
+
+button#orochimaru {
+  border: none;
+  outline: none;
+  border-top: 1px solid #34324e;
+  border-bottom: 1px solid #34324e;
+  margin-top: 80px;
+  background: transparent url("../img/Rectangle\ 23-1@2x.png") left center
+    no-repeat;
+}
+
+button#naruto {
+  border: none;
+  outline: none;
+  background: transparent url("../img/Rectangle\ 23-2@2x.png") left center
+    no-repeat;
+  border-bottom: 1px solid #34324e;
+}
+
+button#danzo {
+  border: none;
+  outline: none;
+  background: transparent url("../img/Rectangle\ 23-6@2x.png") left center
+    no-repeat;
+  border-bottom: 1px solid #34324e;
+}
+
+section .card-end button p {
+  text-align: left;
+  margin-left: 80px;
+}
