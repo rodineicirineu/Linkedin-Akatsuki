@@ -5,8 +5,9 @@ Akatsuki
 
 > Status: Working ⚠️
 
+> Desing: DanielSnow / https://www.instagram.com/danielsnows/?hl=pt-br
 
-# Desing : DanielSnow
+
 
 
 ## How to run the application:
